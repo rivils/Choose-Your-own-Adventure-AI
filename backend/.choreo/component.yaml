@@ -6,7 +6,7 @@ spec:
   type: Service
   source:
     git:
-      url: https://github.com/YOUR_GITHUB_USERNAME/Choose-Your-Own-Adventur
+      url: https://github.com/rivils/Choose-Your-own-Adventure-AI
       branch: main
       path: backend
   endpoints:
