@@ -1,0 +1,9 @@
+{
+  "yaml.validate": true,
+  "yaml.schemaStore.enable": false,
+  "yaml.schemaStore.url": "",
+  "yaml.schemas": {},
+  "editor.formatOnSave": true,
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true
+}
