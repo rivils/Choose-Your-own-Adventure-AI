@@ -14,6 +14,3 @@ spec:
       type: REST
       service:
         port: 8000
-        basePath: /
-      networkVisibilities:
-        - Public
