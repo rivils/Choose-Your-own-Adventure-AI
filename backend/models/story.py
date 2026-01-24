@@ -1,13 +1,12 @@
-from click import argument
 from sqlalchemy import Column, Integer, String, Text, ForeignKey, JSON, DateTime, Boolean
 from sqlalchemy.sql import func
 from sqlalchemy.orm import relationship
 
 from db.database import Base
 
-
 class Story(Base):
     __tablename__ = "stories"
+    __table_args__ = {"extend_existing": True}  # Prevent table redefinition errors
 
     id = Column(Integer, primary_key=True, index=True)
     title = Column(String, index=True)
@@ -16,9 +15,9 @@ class Story(Base):
 
     nodes = relationship("StoryNode", back_populates="story")
 
-
 class StoryNode(Base):
     __tablename__ = "story_nodes"
+    __table_args__ = {"extend_existing": True}  # Prevent table redefinition errors
 
     id = Column(Integer, primary_key=True, index=True)
     story_id = Column(Integer, ForeignKey("stories.id"))
@@ -28,5 +27,5 @@ class StoryNode(Base):
     is_winning_ending = Column(Boolean, default=False)
     options = Column(JSON, default=list)
 
-    story = relationship(argument="Story", back_populates="nodes")
+    story = relationship("Story", back_populates="nodes")
     
