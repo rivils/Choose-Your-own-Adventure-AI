@@ -11,5 +11,6 @@ class Settings(BaseSettings):
 
     class Config:
         env_file = ".env"
+        extra = "ignore"  # <--- ADD THIS LINE RIGHT HERE
 
 settings = Settings()
