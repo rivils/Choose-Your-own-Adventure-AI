@@ -1,19 +1,15 @@
-apiVersion: core.choreo.dev/v1alpha1
-kind: Component
-metadata:
-  name: backend
-spec:
-  type: Service
-  source:
-    git:
-      url: https://github.com/rivils/Choose-Your-own-Adventure-AI
-      branch: main
-      path: backend
-  endpoints:
-    - name: http
-      type: REST
+schemaVersion: "1.2"
+endpoints:
+    - name: rest-api-be2
+      displayName: REST API
       service:
-        port: 8000
         basePath: /
+        port: 8000
+      type: REST
       networkVisibilities:
+        - Project
         - Public
+dependencies:
+    connectionReferences:
+    - name: openai-connection
+      resourceRef: thirdparty:openai/v1
