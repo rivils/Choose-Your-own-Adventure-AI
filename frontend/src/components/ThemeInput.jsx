@@ -37,4 +37,8 @@ function ThemeInput({onSubmit}) {
     </div>
 }
 
+<<<<<<< HEAD
 export default ThemeInput;
+=======
+export default ThemeInput;
+>>>>>>> c2249ef (Initial commit)

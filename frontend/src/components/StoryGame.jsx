@@ -87,4 +87,8 @@ function StoryGame({story, onNewStory}) {
     </div>
 }
 
+<<<<<<< HEAD
 export default StoryGame
+=======
+export default StoryGame
+>>>>>>> c2249ef (Initial commit)

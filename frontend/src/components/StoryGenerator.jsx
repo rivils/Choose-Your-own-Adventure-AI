@@ -99,4 +99,8 @@ function StoryGenerator() {
     </div>
 }
 
+<<<<<<< HEAD
 export default StoryGenerator
+=======
+export default StoryGenerator
+>>>>>>> c2249ef (Initial commit)

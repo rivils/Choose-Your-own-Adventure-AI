@@ -4,6 +4,7 @@ from sqlalchemy.orm import relationship
 
 from db.database import Base
 
+
 class Story(Base):
     __tablename__ = "stories"
     __table_args__ = {"extend_existing": True}  # Prevent table redefinition errors
@@ -15,12 +16,13 @@ class Story(Base):
 
     nodes = relationship("StoryNode", back_populates="story")
 
+
 class StoryNode(Base):
     __tablename__ = "story_nodes"
     __table_args__ = {"extend_existing": True}  # Prevent table redefinition errors
 
     id = Column(Integer, primary_key=True, index=True)
-    story_id = Column(Integer, ForeignKey("stories.id"))
+    story_id = Column(Integer, ForeignKey("stories.id"), index=True)
     content = Column(String)
     is_root = Column(Boolean, default=False)
     is_ending = Column(Boolean, default=False)
@@ -28,4 +30,3 @@ class StoryNode(Base):
     options = Column(JSON, default=list)
 
     story = relationship("Story", back_populates="nodes")
-    

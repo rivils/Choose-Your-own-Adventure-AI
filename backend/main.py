@@ -28,4 +28,8 @@ app.include_router(job.router, prefix=settings.API_PREFIX)
 
 if __name__ == "__main__":
     import uvicorn
+<<<<<<< HEAD
     uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
+=======
+    uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
+>>>>>>> c2249ef (Initial commit)

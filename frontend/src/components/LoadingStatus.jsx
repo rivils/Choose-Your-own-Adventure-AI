@@ -12,4 +12,8 @@ function LoadingStatus({theme}) {
     </div>
 }
 
+<<<<<<< HEAD
 export default LoadingStatus;
+=======
+export default LoadingStatus;
+>>>>>>> c2249ef (Initial commit)

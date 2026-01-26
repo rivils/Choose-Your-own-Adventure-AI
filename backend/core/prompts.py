@@ -18,7 +18,7 @@ STORY_PROMPT = """
                 Output your story in this exact JSON structure:
                 {format_instructions}
 
-                Don't simplify or omit any part of the story structure. 
+                Don't simplify or omit any part of the story structure.
                 Don't add any text outside of the JSON structure.
                 """
 

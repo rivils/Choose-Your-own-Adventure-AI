@@ -4,4 +4,8 @@ langchain-openai>=0.3.18
 psycopg2-binary>=2.9.10
 python-dotenv>=1.1.0
 sqlalchemy>=2.0.41
+<<<<<<< HEAD
 uvicorn>=0.34.2
+=======
+uvicorn>=0.34.2
+>>>>>>> c2249ef (Initial commit)

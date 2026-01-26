@@ -8,7 +8,11 @@ class StoryJobBase(BaseModel):
 
 
 class StoryJobResponse(BaseModel):
+<<<<<<< HEAD
     job_id: int
+=======
+    job_id: str
+>>>>>>> c2249ef (Initial commit)
     status: str
     created_at: datetime
     story_id: Optional[int] = None
